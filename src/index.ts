@@ -14,7 +14,7 @@ import {RouterBuilder} from "./core/controllers/router-builder";
 import {User} from "./entities/examples/User";
 import {Child} from "./entities/examples/Child";
 import {loadTeam} from "./controllers/team";
-import {loadTournament} from "./controllers/tournament";
+// import {loadTournament} from "./controllers/tournament";
 /**
  * Example classes
  */
@@ -59,7 +59,6 @@ createConnection(TYPE_ORM_OPTIONS).then((con)=> {
 
     const router = Router({mergeParams: true});
     router.use(loadTeam(con));
-    router.use(loadTournament(con))
     app.use('/api', router);
     console.log(`DB connected: `, GLOBAL_DB_CONNECTION.isConnected)
 
