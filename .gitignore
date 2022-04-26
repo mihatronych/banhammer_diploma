@@ -128,3 +128,9 @@ dist
 *.xml
 .idea/vcs.xml
 .idea
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
