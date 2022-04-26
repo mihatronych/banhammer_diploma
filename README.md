@@ -1,4 +1,4 @@
-# FootBoiCheck alternative BackEnd
+# Banhammer BackEnd
 
 ###### Based on:
 * Express
