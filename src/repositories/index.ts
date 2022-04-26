@@ -9,4 +9,4 @@ import {CommentRepository} from "./comment-repository";
 import {UserRepository} from "./user-repository";
 
 
-export default {RoleRepository, UserRepository, PostRepository, PictureRepository, CommentRepository, Post_MarkRepository, Picture_MarkRepository, Comment_MarkRepository, Message_TopicRepository};
+export default { UserRepository, PostRepository, PictureRepository, CommentRepository, Post_MarkRepository, Picture_MarkRepository, Comment_MarkRepository, Message_TopicRepository, RoleRepository};

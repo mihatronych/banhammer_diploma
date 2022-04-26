@@ -1,11 +1,11 @@
 import {DTO} from "../core/models/dto";
 import {Column, Entity, ManyToMany, OneToMany} from "typeorm";
-import {Post} from "./Post";
-import {Comment} from "./Comment";
-import {Picture} from "./Picture";
+import {Post} from "./post";
+import {Comment} from "./comment";
+import {Picture} from "./picture";
 
 @Entity()
-export class Message_Topic extends DTO {
+export class Message_topic extends DTO {
     @Column({nullable:true})
     topic_name: string;
 

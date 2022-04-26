@@ -1,14 +1,14 @@
 // import { Child } from "./examples/Child";
 // import { User } from "./examples/User";
 
-import {Role} from "./Role";
-import {Comment} from "./Comment";
-import {Message_Topic} from "./Message_Topic";
-import {Post} from "./Post";
-import {Picture} from "./Picture";
-import {Comment_Mark} from "./Comment_Mark";
-import {Picture_Mark} from "./Picture_Mark";
-import {Post_Mark} from "./Post_Mark";
-import {User} from "./User";
+import {Comment} from "./comment";
+import {Message_topic} from "./message_topic";
+import {Post} from "./post";
+import {Picture} from "./picture";
+import {Comment_mark} from "./comment_mark";
+import {Picture_mark} from "./picture_mark";
+import {Post_mark} from "./post_mark";
+import {User} from "./user";
+import {Role} from "./role";
 
-export default {Role, User, Post, Picture, Comment, Comment_Mark, Picture_Mark, Post_Mark, Message_Topic}
+export default {User, Post, Picture, Comment, Comment_Mark: Comment_mark, Picture_Mark: Picture_mark, Post_Mark: Post_mark, Message_Topic: Message_topic, Role}

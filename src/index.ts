@@ -13,7 +13,10 @@ import BasicRepository from "./core/repositories/basic-repository";
 import {RouterBuilder} from "./core/controllers/router-builder";
 import {User} from "./entities/examples/User";
 import {Child} from "./entities/examples/Child";
-import {loadTeam} from "./controllers/team";
+import {loadUser} from "./controllers/user";
+import {loadPost} from "./controllers/post";
+import {loadComment} from "./controllers/comment";
+import {loadPicture} from "./controllers/picture";
 // import {loadTournament} from "./controllers/tournament";
 /**
  * Example classes
@@ -58,7 +61,10 @@ createConnection(TYPE_ORM_OPTIONS).then((con)=> {
     GLOBAL_DB_CONNECTION = con;
 
     const router = Router({mergeParams: true});
-    router.use(loadTeam(con));
+    router.use(loadUser(con));
+    router.use(loadPost(con));
+    router.use(loadPicture(con));
+    router.use(loadComment(con));
     app.use('/api', router);
     console.log(`DB connected: `, GLOBAL_DB_CONNECTION.isConnected)
 
