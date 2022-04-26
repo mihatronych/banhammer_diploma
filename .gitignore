@@ -127,3 +127,4 @@ dist
 .pnp.*
 *.xml
 .idea/vcs.xml
+.idea
