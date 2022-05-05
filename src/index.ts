@@ -17,6 +17,7 @@ import {loadUser} from "./controllers/user";
 import {loadPost} from "./controllers/post";
 import {loadComment} from "./controllers/comment";
 import {loadPicture} from "./controllers/picture";
+import {loadMessageTopic} from "./controllers/message_topic";
 // import {loadTournament} from "./controllers/tournament";
 /**
  * Example classes
@@ -65,6 +66,7 @@ createConnection(TYPE_ORM_OPTIONS).then((con)=> {
     router.use(loadPost(con));
     router.use(loadPicture(con));
     router.use(loadComment(con));
+    router.use(loadMessageTopic(con));
     app.use('/api', router);
     console.log(`DB connected: `, GLOBAL_DB_CONNECTION.isConnected)
 

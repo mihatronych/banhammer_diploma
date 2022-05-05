@@ -7,5 +7,8 @@ export class Message extends DTO{
     text: string;
 
     @Column({nullable:true})
+    preprocessed_text: string;
+
+    @Column({nullable:true})
     publication_date: Date;
 }

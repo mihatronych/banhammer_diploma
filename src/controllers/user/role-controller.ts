@@ -4,6 +4,7 @@ import {RoleRepository} from "../../repositories/role-repository";
 
 export class RoleController extends BasicController<RoleRepository> {
     constructor(connection:Connection) {
-        super(connection, RoleRepository);
+        super(connection, RoleRepository, false);
+        this.initDefault();
     }
 }
